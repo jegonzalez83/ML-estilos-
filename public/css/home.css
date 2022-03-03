@@ -40,7 +40,22 @@ body {
 
 
 main{
-    background-color: var(--color-grisClaro)
+    background-color: var(--color-grisClaro);
+    margin: 0;
+    
+}
+main section article{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    
+    width: auto;
+    height: auto;
+       
+    padding: 0px;
+   
+    
+    background-color: white;
+
 }
 main section article i{
     display: block;
@@ -64,22 +79,15 @@ li {
 
 h3{
     color: var(--color-grisOscuro);
-}
-article {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    height: 350px;
-    width: 250px;
-       
-    padding: 0px;
-    align-items: center;
+}  
+
     
-
-}
-
 article .precio-oferta {
-    box-sizing: content-box;
-    width: 100%;
+    
+    
+    display: inline-block;
+  
+   
    
 }
 article .precio-oferta p#precio {
