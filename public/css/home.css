@@ -22,7 +22,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
 }
 a{
@@ -30,77 +29,13 @@ a{
     text-decoration: none;
 
 }
-
-section {
-    padding: 30px;
-}
 body {
     font-family: var(--font-roboto);
 }
 
-
-main{
-    background-color: var(--color-grisClaro);
-    margin: 0;
-    
-}
-main section article{
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    
-    width: auto;
-    height: auto;
-       
-    padding: 0px;
-   
-    
-    background-color: white;
-
-}
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-   
-
 li {
     list-style: none;
-
 }
-
-h3{
-    color: var(--color-grisOscuro);
-}  
-
-    
-article .precio-oferta {
-    
-    
-    display: inline-block;
-  
-   
-   
-}
-article .precio-oferta p#precio {
-    display: inline-block;
-    width: 30%;
-}
-
-article .precio-oferta p#oferta {
-    display: inline-block;
-    width: 60%;
-    color: #39b54a;
-}
-
 /*HEADER*/
 header {
     background-color: var(--color-amarillo);
@@ -111,12 +46,15 @@ header {
 
 
 }
+nav {
+    display: none;
+}
 header .burger-menu {
     background-color: var(--color-celeste);
     border-radius: 5px;
     color: white;
     text-align: center;
-    width: 15px;
+    width: fit-content;
     padding: 7px;
     font-size: 17px;
     margin: 10px auto 0 auto;
@@ -137,6 +75,72 @@ header p{
 }
 header nav .menu-top{
     margin-bottom: 20px;
+}
+
+/*MAIN*/
+main {
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--color-grisClaro);
+    
+}
+main h3 {
+    padding-left: 20px;
+}
+main article {
+    margin-bottom: 10px;
+    margin: 20px;
+    background-color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    max-width: 380px;
+    display: block;
+    
+}
+.articulo {
+    position: relative;
+    display: block;
+    
+}
+
+
+main section article .articulo i {
+
+font-size: 25px ;
+padding: 8px ;
+width: 30px ;
+height: 30px ;
+border: 1px solid #39b54a ;
+background-color: #FFF ;
+border-radius: 50%;
+color: var(--color-verde);
+position: absolute;
+top: -20px;
+right: 10px;
+
+
+
+}
+main section article .articulo p#precio{
+    
+    
+   
+  
+    
+    width: 30%;
+    
+}
+main section article .articulo p#descuento{
+    
+   
+    color: var(--color-verde);
+    
+    
+    
+    
+    
 }
 
 /*FOOTER*/
