@@ -98,16 +98,18 @@ header nav .menu-top{
 /*MAIN*/
 main {
     align-items: center;
-    display: block;
-    margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
     background-color: var(--color-grisClaro);
     padding: 20px;
+    display: block;
+    margin: 0 auto;
     
 }
 main section {
     margin: 0 auto;
-    
+    display: block;
+    align-items: center;
+
 }
 main h3 {
     padding-left: 20px;
@@ -121,13 +123,15 @@ main article {
     padding-bottom: 20px;
     max-width: 380px;
     display: block;
-    margin: 20px auto 10px;
+    margin: 0 auto;
+    
     
     
 }
 .articulo {
     position: relative;
     display: block;
+    margin: 0 auto;
 
     
     
@@ -289,14 +293,24 @@ footer p#copyrigth{
     
     main section article {
         display: inline-block;
-        width: 43.9%;
+        max-width: 300px;
         margin: 10px;
         
         
         
     }    
     
-    /*DESTOC*/
+    /*DESKTOP*/
+    @media (min-width: 1024px){
+        main section article {
+            
+            
+            margin-right: 15px;
+            max-width: 182px;
+
+    }
     
     
       
+
+    }
